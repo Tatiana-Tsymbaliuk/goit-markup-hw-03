@@ -30,8 +30,11 @@ body{
 .logo-header{
  color:var(--secondary-title-color);
 }
-.logo-footer{
-  color: var(--main-title-color);
+
+.container{
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .nav-link{
     font-weight: 500;
@@ -159,8 +162,13 @@ body{
   color: #757575;
 }
 /*-------------------------------footer--------------------------*/
+
 .footer{
   background-color: #2F303A;
+}
+
+.logo-footer {
+  color: var(--main-title-color);
 }
 .footer-addres{
   font-style: normal;
