@@ -21,11 +21,9 @@ p {
 
 .list{
   list-style: none;
-  border: 5px dashed red;
-   margin: 0;
+  margin: 0;
   padding: 0;
-  /*padding: 20px;
-  margin: 10px;*/
+ 
 }
 .link{
   text-decoration: none;
@@ -40,7 +38,27 @@ img{
   background-color:var(--main-title-color);
   display: flex;
 }
-.nav-first{display: flex;}
+.header-conteiner{
+display: flex;
+align-items: center;
+}
+.header-nav{
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.heder-list{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 93px;
+}
+.header-group{
+display: flex;
+align-items: center;
+gap: 50px;
+}
+
 .logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -62,18 +80,19 @@ img{
   padding-bottom: 94px;
 }
 .container{
+  justify-content:center;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  
-  outline:2px solid blue;
 }
-.nav-list{
-  display: flex;
-}
+
 .nav-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,7 +109,8 @@ img{
   color: var(--activ-title-color);
 }
 .heder-mail{
-  
+  padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -98,7 +118,8 @@ img{
     color: #757575;
 }
 .heder-tel{
-  
+  padding-top: 32px;
+    padding-bottom: 32px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -119,16 +140,16 @@ img{
 
 /*-------------------------------main----------------------------*/
 .main-title{
-  background-color: #2F303A;
-  
-  
+  background-color: #2F303A;  
 }
+.cent-btn{
+  align-items: center;
+  margin-bottom: 200px;
+}
+
 .main-btn{
   padding: 10px 32px;
-  min-width: 216px;
-  min-height: 50px;
   border-radius: 4px;
-  margin-bottom: 200px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -151,8 +172,8 @@ img{
 .main-caption{
   margin-bottom: 30px;
   padding-top: 200px; 
-   margin-left: auto;
-   margin-right: auto;
+  margin-left: auto;
+    margin-right: auto;
    width: 696px;
   font-weight: 900;
     font-size: 44px;
@@ -163,8 +184,18 @@ img{
     color:var(--main-title-color);
 }
 .list-our-virtues{
-  width: 270px;
+  display: flex;
+ 
   
+}
+.about-container{
+  display: flex;
+}
+.list-about:last-child{
+  margin-right: auto;
+}
+.list-about:not(:last-child){
+  margin-right: 30px;
 }
 
 .maim-list-benefits{
@@ -227,18 +258,37 @@ margin-bottom: 50px;
   padding-bottom: 30px;
 }
 .card-filter {
-  padding:20px 24px 20px 24px;
+  padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 /*-------------------------------footer--------------------------*/
 
 .footer{
   background-color: #2F303A;
+  
+ 
 }
-
+.footer-container{
+display: flex;
+flex-direction:column;
+flex-wrap:wrap;
+}
+.adress-group{
+  display: flex;
+  width: 231px;
+  margin-bottom: 60px;
+  flex-direction:column;
+}
+.footer-logo{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .logo-footer {
   color: var(--main-title-color);
 }
 .footer-addres{
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -246,6 +296,7 @@ margin-bottom: 50px;
   color: var(--main-title-color);
 }
 .footer-mail{
+  margin-bottom: 9px;
  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -253,6 +304,7 @@ margin-bottom: 50px;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel{
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -274,19 +326,17 @@ color: var(--activ-title-color);
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  gap:8px;
 
 }
-
-
-  
-  
+.card-set{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+.card-set-item{
+  flex-basis: calc((100%-30px)*3)/3;
 }
-.filter-item{
-
-  flex-basis:calc((100%-30px*2)/3);
-}
-/*.filter-item.child{
-  margin-right:0;}*/
 
 .list-worker{
   display: flex;
@@ -299,7 +349,7 @@ gap: 30px;
     gap: 30px;
 }
 .visually-hidden {
-  position: absolute;
+   position: absolute;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -331,6 +381,8 @@ gap: 30px;
 color:var(--main-title-color)
 }
 .list-cards{
+  margin-right: 0;
+  width: 322px;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: calc(36/18);
@@ -338,6 +390,8 @@ color:var(--main-title-color)
   color:var(--secondary-title-color);
 }
 .list-cards-name{
+  margin-right: 0;
+  width: 322px;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
