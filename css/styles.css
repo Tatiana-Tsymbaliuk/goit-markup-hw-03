@@ -37,10 +37,15 @@ img{
 .header{
   background-color:var(--main-title-color);
   display: flex;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  
+  
 }
 .header-conteiner{
 display: flex;
 align-items: center;
+
+  
 }
 .header-nav{
   display: flex;
@@ -79,9 +84,11 @@ gap: 50px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container{
-  justify-content:center;
-  width: 1230px;
+.section-delete{
+  padding-top: ;
+}
+.container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -141,14 +148,18 @@ gap: 50px;
 /*-------------------------------main----------------------------*/
 .main-title{
   background-color: #2F303A; 
-  margin-left: auto; 
-}
-.cent-btn{
- 
- margin-bottom: 200px;
+padding-top: 200px;
+padding-bottom: 200px;
+
 }
 
+
 .main-btn{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
   padding: 10px 32px;
   border-radius: 4px;
     font-family: inherit;
@@ -171,8 +182,8 @@ gap: 50px;
   color: var(--main-title-color)
 }
 .main-caption{
-  margin-bottom: 30px;
-  padding-top: 200px; 
+ 
+   
   margin-left: auto;
     margin-right: auto;
    width: 696px;
@@ -185,15 +196,16 @@ gap: 50px;
     color:var(--main-title-color);
 }
 .list-our-virtues{
-  display: flex;
- 
-  
+  display: flex; 
 }
 .about-container{
   display: flex;
 }
+.list-about{
+  width: 270px;
+}
 .list-about:last-child{
-  margin-right: auto;
+  margin-right: auto; 
 }
 .list-about:not(:last-child){
   margin-right: 30px;
@@ -262,6 +274,9 @@ margin-bottom: 50px;
   padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+      border: 1px solid rgba(238, 238, 238, 1);
+      
+        border-top: none; 
 }
 /*-------------------------------footer--------------------------*/
 
@@ -274,15 +289,15 @@ margin-bottom: 50px;
 display: flex;
 flex-direction:column;
 flex-wrap:wrap;
+padding-top: 60px;
+padding-bottom: 60px ;
 }
 .adress-group{
   display: flex;
   width: 231px;
-  margin-bottom: 60px;
   flex-direction:column;
 }
 .footer-logo{
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 .logo-footer {
@@ -326,7 +341,7 @@ color: var(--activ-title-color);
 .list-two{
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   gap:8px;
 
 }
