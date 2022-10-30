@@ -140,14 +140,15 @@ gap: 50px;
 
 /*-------------------------------main----------------------------*/
 .main-title{
-  background-color: #2F303A;  
+  background-color: #2F303A; 
+  margin-left: auto; 
 }
 .cent-btn{
-  align-items: center;
-  margin-bottom: 200px;
+ 
+ margin-bottom: 200px;
 }
 
-.main-btn{
+.main-btn{ 
   padding: 10px 32px;
   border-radius: 4px;
     font-family: inherit;
