@@ -85,7 +85,7 @@ gap: 50px;
   padding-bottom: 94px;
 }
 .section-delete{
-  padding-top: ;
+  padding-top: 0;
 }
 .container {
   width: 1200px;
@@ -282,15 +282,15 @@ margin-bottom: 50px;
 
 .footer{
   background-color: #2F303A;
-  
+  padding-top: 60px;
+padding-bottom: 60px ;
  
 }
 .footer-container{
 display: flex;
 flex-direction:column;
 flex-wrap:wrap;
-padding-top: 60px;
-padding-bottom: 60px ;
+
 }
 .adress-group{
   display: flex;
